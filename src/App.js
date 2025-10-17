@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import erkekFoto from "./foto/erkek.png";
 import kizFoto from "./foto/kız.png";
@@ -19,7 +19,7 @@ function App() {
   const [showResult, setShowResult] = useState(false);
   const [showAllFilms, setShowAllFilms] = useState(false);
   const [showRomanticMessage, setShowRomanticMessage] = useState(false);
-  const [couplePhotos, setCouplePhotos] = useState({
+  const [couplePhotos] = useState({
     partner1: erkekFoto,
     partner2: kizFoto,
   });
